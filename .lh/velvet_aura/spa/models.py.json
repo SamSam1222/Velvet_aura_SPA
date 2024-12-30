@@ -1,0 +1,18 @@
+{
+    "sourceFile": "velvet_aura/spa/models.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1735508639767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1735508639767,
+            "name": "Commit-0",
+            "content": "from django.db import models\n\nclass Service(models.Model):\n    name = models.CharField(max_length=100)\n    description = models.TextField()\n    price = models.DecimalField(max_digits=10, decimal_places=2)\n\n    def __str__(self):\n        return self.name\n\nclass Booking(models.Model):\n    customer_name = models.CharField(max_length=100)\n    service = models.ForeignKey(Service, on_delete=models.CASCADE)\n    booking_date = models.DateField()\n\n    def __str__(self):\n        return f\"{self.customer_name} - {self.service.name}\"\n"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "velvet_aura/spa/urls.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1735510084939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1735510084939,
+            "name": "Commit-0",
+            "content": "from django.urls import path\nfrom . import views\n\nurlpatterns = [\n    path('', views.home, name='home'),\n]\n"
+        }
+    ]
+}

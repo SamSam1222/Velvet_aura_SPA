@@ -1,0 +1,18 @@
+{
+    "sourceFile": "velvet_aura/spa/admin.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1735508662377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1735508662377,
+            "name": "Commit-0",
+            "content": "from django.contrib import admin\nfrom .models import Service, Booking\n\nadmin.site.register(Service)\nadmin.site.register(Booking)\n"
+        }
+    ]
+}
